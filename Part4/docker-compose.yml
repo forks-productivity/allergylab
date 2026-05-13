@@ -3,7 +3,7 @@ services:
       image: quanticschoolofbusiness/103mysql
     app:
       build: app/.
-      ports: 
+      ports:
         - 3006:3006
       depends_on:
         - dbhost
@@ -12,11 +12,11 @@ services:
       image: redis
     email:
       build: email/.
-      ports: 
+      ports:
         - 25:25
       depends_on:
         - redis-server
       environment:
-        TO_ADDRESS: <your Quantic email>
-        FROM_ADDRESS: <new Gmail email>
-        FROM_PASSWORD: <Gmail app password>
+        TO_ADDRESS: tm122@students.quantic.edu
+        FROM_ADDRESS: muthomititus@gmail.com
+        FROM_PASSWORD: birpuifbeigouzoc
